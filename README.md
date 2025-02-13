@@ -86,5 +86,14 @@ This project is licensed under the **MIT License**.
 
 ---
 
+## Screenshots
+
+### Login Page
+![Login Page](screenshots/s1.jpg)
+
+### Signup Page
+![Signup Page](screenshots/s2.jpg)
+
+
   
 
