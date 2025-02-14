@@ -12,7 +12,7 @@ app.use(cors());
 
 // Default route
 app.get("/", (req, res) => {
-    res.send("API is running...");
+  res.send("API is running...");
 });
 
 // MongoDB connection
@@ -48,5 +48,9 @@ app.post("/api/login", async (req, res) => {
   res.json({ message: "Login Successful", user });
 });
 
-// Export the app for Vercel
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+// Export for Vercel
 export default app;
