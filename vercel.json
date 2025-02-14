@@ -6,18 +6,19 @@
         "use": "@vercel/node"
       },
       {
-        "src": "src/*",
-        "use": "@vercel/static-build"
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": { "distDir": "dist" }
       }
     ],
     "routes": [
       {
         "src": "/api/(.*)",
-        "dest": "/backend/Server.js"
+        "dest": "backend/Server.js"
       },
       {
         "src": "/(.*)",
-        "dest": "/src/index.html"
+        "dest": "/index.html"
       }
     ]
   }
