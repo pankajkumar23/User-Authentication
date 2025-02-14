@@ -16,7 +16,7 @@ const Login = () => {
     
 
       try {
-        const response = await fetch("https://your-vercel-backend.vercel.app/api/login"
+        const response = await fetch("/api/login"
 
 , {
           method: "POST",

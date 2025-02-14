@@ -24,7 +24,7 @@ const Signup = () => {
       return;
     }
     try {
-      const response = await fetch("https://your-vercel-backend.vercel.app/api/signup"
+      const response = await fetch("/api/signup"
 , {
         method: "POST",
         headers: {
